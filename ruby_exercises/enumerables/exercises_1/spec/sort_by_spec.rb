@@ -8,9 +8,10 @@ RSpec.describe 'sort_by' do
     expect(sorted).to eq(["Bacon", "broccoli", "candy", "Carrots", "FISH"])
   end
 
-  xit 'alphabetically by last letter' do
+  it 'alphabetically by last letter' do
     things = ["pill", "box", "glass", "water", "sponge"]
     sorted = things.sort_by do |thing|
+      thing.chars
       # Your code goes here
     end
     expect(sorted).to eq(["sponge", "pill", "water", "glass", "box"])
@@ -18,6 +19,9 @@ RSpec.describe 'sort_by' do
 
   xit 'distance' do
     distances = ["1cm", "9cm", "30cm", "4cm", "2cm"]
+    sorted = distances.sort_by do |distance|
+      
+    end
     # Your code goes here
     expect(sorted).to eq(["1cm", "2cm", "4cm", "9cm", "30cm"])
   end

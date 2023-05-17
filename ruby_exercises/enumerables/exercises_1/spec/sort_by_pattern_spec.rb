@@ -18,8 +18,15 @@ RSpec.describe 'sort_by pattern' do
     things = ["pill", "box", "glass", "water", "sponge"]
     transformed = []
     things.each do |thing|
-      # Your code goes here
+      transformed << [thing.upcase, thing]
     end
+  
+    # transformed = transformed.sort
+    # sorted = []
+    # transformed.each do |sort_key, thing|
+    #   sorted << thing
+      # Your code goes here
+    
     transformed = transformed.sort
     sorted = []
     transformed.each do |sort_key, thing|
