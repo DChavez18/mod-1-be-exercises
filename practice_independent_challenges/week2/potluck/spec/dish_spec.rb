@@ -6,7 +6,7 @@ RSpec.describe do
         expect(dish).to be_a(Dish)
     end
 
-    it "has a name and a category" do
+    it 'has attributes' do
         dish = Dish.new("Couscous Salad", :appetizer)
         expect(dish.name).to eq("Couscous Salad")
         expect(dish.category).to eq(:appetizer)

@@ -1,12 +1,13 @@
 class Potluck
     attr_reader :date, :dishes
-    def initialize(date = "7-13-18")
+    def initialize(date)
         @date = date
         @dishes = []
     end
 
-    def add_dish(name, category)
-        dish = Dish.new(name, :category)
+    def add_dish(dish)
         @dishes << dish
     end
+
+   
 end
